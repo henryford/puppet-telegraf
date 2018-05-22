@@ -30,7 +30,7 @@ define telegraf::input (
   }
 
   if $sections {
-    validate_hash($sections)
+    validate_array($sections)
   }
 
   Class['::telegraf::config']
